@@ -41,24 +41,7 @@ function humescores_setup() {
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
-	add_theme_support( 'post-thumbnails' );
-
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'humescores' ),
-	) );
-
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+	
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'humescores_custom_background_args', array(
